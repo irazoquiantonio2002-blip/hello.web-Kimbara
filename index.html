@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimbara | Tours y Experiencias en Costa Maya · Mahahual, Q. Roo</title>
+  <meta name="description" content="Kimbara: snorkel con tortugas marinas, club de playa y tours a zonas arqueológicas mayas en Mahahual, Costa Maya. Reserva tu experiencia con guías locales.">
+  <meta name="keywords" content="tours Mahahual, snorkel Costa Maya, tortugas marinas, club de playa Mahahual, Kimbara, excursiones Quintana Roo, zona arqueológica maya">
+  <meta property="og:title" content="Kimbara | Tours y Experiencias en Costa Maya">
+  <meta property="og:description" content="Snorkel con tortugas, club de playa y ruinas mayas en Mahahual. Guías locales, grupos reducidos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/logo-kimbara.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <i class="fa-solid fa-water"></i>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Kimbara — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img src="img/logo-kimbara.jpg" alt="" loading="lazy">
+          </div>
+          <div class="nav-logo-copy">
+            <span>Kimbara</span>
+            <span>Costa Maya</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué Kimbara</a></li>
+            <li><a href="#ambientes">Experiencias</a></li>
+            <li><a href="#proceso">Cómo reservar</a></li>
+            <li><a href="#producto">Tour Insignia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Reservar mi Tour
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué Kimbara</a>
+      <a href="#ambientes">Experiencias</a>
+      <a href="#proceso">Cómo reservar</a>
+      <a href="#producto">Tour Insignia</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Reservar mi Tour →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Tours · Snorkel · Mahahual, Costa Maya
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Snorkel, playa y selva.</span></span>
+            <span class="line"><span>Todo en un mismo día,</span></span>
+            <span class="line"><span class="accent">en Costa Maya.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Nada junto a <strong>tortugas marinas</strong>, relájate en nuestro club de playa frente al Caribe y descubre templos mayas entre la selva — experiencias guiadas por locales en Mahahual, para que solo te preocupes por disfrutar.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Reservar mi Tour
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-water" style="font-size:15px; color:var(--gray);"></i>
+              Ver Experiencias
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Guías locales certificados
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-sun"></i>
+              Salidas desde las 7:00 AM
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Mahahual, Q. Roo
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">¿Por qué Kimbara?</div>
+            <h2 class="why-quote" id="why-heading">
+              El Caribe no siempre se ve igual…
+              <em> a veces hay que meterse al agua para entenderlo.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Combinamos el conocimiento de guías locales con el ritmo pausado de Costa Maya para transformar un día de playa en una experiencia que se queda contigo.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-person-swimming"></i>
+            </div>
+            <h3>Snorkel con Tortugas</h3>
+            <p>Nada en aguas cristalinas y observa tortugas marinas en su hábitat natural, siempre guiado por locales.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+            <h3>Club de Playa</h3>
+            <p>Camastros, palapas y la mejor vista al Caribe para pasar el día sin preocuparte por nada.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-landmark"></i>
+            </div>
+            <h3>Zona Arqueológica Maya</h3>
+            <p>Visita templos milenarios rodeados de selva, a minutos de la costa de Mahahual.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Atención Personalizada</h3>
+            <p>Grupos reducidos, trato cercano y un negocio liderado por mujeres de la región.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Experiencias Kimbara
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestras Experiencias</div>
+            <h2 class="section-title" id="amb-heading">
+              Cada día en Costa Maya<br>
+              <span class="gold">puede ser distinto</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Elige la experiencia perfecta para tu grupo, o combínalas todas en un solo tour.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál eliges hoy?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Snorkel -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="img/snorkel-tortuga.jpg"
+              alt="Tortuga marina nadando en aguas cristalinas de Costa Maya durante un tour de snorkel">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(20,184,166,0.15); border-color:rgba(94,234,212,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-person-swimming" style="color:#5eead4;"></i>
+              </div>
+              <h3>Snorkel con Tortugas</h3>
+              <p>Nada junto a tortugas marinas y peces tropicales en el arrecife de Costa Maya.</p>
+              <div class="amb-temp">Equipo incluido — Guía en el agua</div>
+            </div>
+          </div>
+
+          <!-- Club de playa -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="img/club-playa.jpg"
+              alt="Club de playa con palapas y camastros frente al mar turquesa de Mahahual">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(227,166,64,0.15); border-color:rgba(243,196,106,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-umbrella-beach" style="color:#f3c46a;"></i>
+              </div>
+              <h3>Club de Playa</h3>
+              <p>Camastros, sombra de palapa y el Caribe a unos pasos. Ideal para descansar entre tour y tour.</p>
+              <div class="amb-temp">Acceso a playa — Ambiente familiar</div>
+            </div>
+          </div>
+
+          <!-- Ruinas mayas -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="img/ruinas-mayas.jpg"
+              alt="Pirámide maya rodeada de selva en zona arqueológica cercana a Mahahual">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(232,89,63,0.15); border-color:rgba(232,89,63,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-landmark" style="color:#e8593f;"></i>
+              </div>
+              <h3>Ruinas Mayas</h3>
+              <p>Recorre templos ancestrales entre la selva, a poca distancia de la costa.</p>
+              <div class="amb-temp">Historia y naturaleza — Guía incluida</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo reservar
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo reservar</div>
+          <h2 class="section-title" id="proceso-heading">
+            Simple, rápido y <span class="gold">sin complicaciones</span>
+          </h2>
+          <p>De tu mensaje a la playa, así de fácil es vivir Kimbara.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Escríbenos</h3>
+            <p>Cuéntanos cuántos son y qué experiencia buscan, por WhatsApp o el formulario de esta página.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Arma tu Plan</h3>
+            <p>Te armamos una propuesta a la medida: snorkel, playa, ruinas mayas o la combinación que prefieras.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Disfruta Costa Maya</h3>
+            <p>Te recibimos en Mahahual y nos encargamos de que solo tengas que disfrutar el día.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO ESTRELLA — Tour Insignia
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Tour Insignia</div>
+            <h2 class="section-title" id="prod-heading">
+              Vive Costa Maya<br>
+              <span class="gold">en un solo tour</span>
+            </h2>
+            <p class="producto-lead">
+              Nuestro recorrido más pedido combina snorkel con tortugas, playa y tiempo libre en el club — pensado para familias, grupos y quienes bajan de crucero con pocas horas en tierra.
+            </p>
+
+            <ul class="feature-rows" aria-label="Qué incluye el tour insignia">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-sun"></i></div>
+                <div>
+                  <h4>Salidas desde las 7:00 AM</h4>
+                  <p>Aprovechamos la luz de la mañana, cuando el mar está más tranquilo y visible.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+                <div>
+                  <h4>Guías Locales</h4>
+                  <p>Conocen cada rincón de Costa Maya y cuidan el ecosistema en cada tour.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
+                <div>
+                  <h4>Grupos Reducidos</h4>
+                  <p>Atención cercana y personalizada, sin sentirte parte de una multitud.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-vest"></i></div>
+                <div>
+                  <h4>Equipo Incluido</h4>
+                  <p>Chaleco y snorkel listos para ti, solo trae ganas de meterte al agua.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Detalles del tour">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">7 AM</span>
+                <span class="spec-name">Hora de salida</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">100%</span>
+                <span class="spec-name">Equipo incluido</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Local</span>
+                <span class="spec-name">Guías</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Todos</span>
+                <span class="spec-name">Niveles bienvenidos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Snorkelistas nadando junto a una tortuga marina en el tour insignia de Kimbara">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Tour más solicitado
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-users" style="color:var(--gold);"></i>
+                Grupos de 2 a 15 personas
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos de Kimbara">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="7" data-suffix=" AM"
+                 aria-label="7 de la mañana">0</div>
+            <div class="stat-lbl">Salida<br>cada mañana</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="3" data-suffix=""
+                 aria-label="3 experiencias">0</div>
+            <div class="stat-lbl">Experiencias<br>Kimbara</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100 por ciento">0</div>
+            <div class="stat-lbl">Guías<br>locales</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2" data-suffix=""
+                 aria-label="2 ecosistemas">0</div>
+            <div class="stat-lbl">Ecosistemas:<br>mar y selva</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES — Para quién es Kimbara
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Ideal para ti si...</div>
+          <h2 class="section-title" id="sec-heading">
+            Kimbara es para <span class="gold">todo tipo de viajero</span>
+          </h2>
+          <p>Ya sea que bajes del crucero por unas horas o te quedes una semana en Costa Maya, armamos tu experiencia.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-ship sector-icon" aria-hidden="true"></i>
+            <h3>Cruceristas</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-users sector-icon" aria-hidden="true"></i>
+            <h3>Familias</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-heart sector-icon" aria-hidden="true"></i>
+            <h3>Parejas</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-people-group sector-icon" aria-hidden="true"></i>
+            <h3>Grupos de amigos</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-person-hiking sector-icon" aria-hidden="true"></i>
+            <h3>Aventureros</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Reserva tu lugar en <span class="gold">Costa Maya</span>
+          </h2>
+          <p>Escríbenos y armamos tu experiencia Kimbara en minutos.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Personalizada</h3>
+            <p class="ci-sub">Guías locales listos para armar tu día perfecto en Mahahual.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Zona Mantarraya,<br>
+                     77000 Mahahual,<br>
+                     Quintana Roo, México.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Horario</h4>
+                  <p>Abrimos todos los días<br>desde las 7:00 AM.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:+529831269118">983 126 9118</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos.</p>
+                  <a href="https://wa.me/529831269118" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué experiencia buscas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Snorkel con Tortugas</option>
+                    <option>Club de Playa</option>
+                    <option>Zona Arqueológica Maya</option>
+                    <option>Tour Completo Kimbara</option>
+                    <option>Grupo grande / Evento privado</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle de tu grupo</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Número de personas, fecha aproximada o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="img/logo-kimbara.jpg" alt="" loading="lazy">
+          <span>Kimbara</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Kimbara. Todos los derechos reservados. Mahahual, Quintana Roo.
+        </p>
+        <div class="footer-socials">
+          <a href="tel:+529831269118"
+             class="footer-soc" aria-label="Llamar por teléfono">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="https://wa.me/529831269118" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/529831269118?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20tours%20de%20Kimbara."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
